@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HealthMate Profile &amp; Emergency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary": "#943700",
+                        "on-background": "#191c1e",
+                        "background": "#f7f9fb",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "outline": "#737686",
+                        "inverse-primary": "#b4c5ff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "surface-dim": "#d8dadc",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f7f9fb",
+                        "primary-container": "#2563eb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#eeefff",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdbcd",
+                        "on-primary-fixed": "#00174b",
+                        "on-secondary-container": "#394c84",
+                        "on-tertiary-container": "#ffede6",
+                        "inverse-surface": "#2d3133",
+                        "primary": "#004ac6",
+                        "outline-variant": "#c3c6d7",
+                        "surface": "#f7f9fb",
+                        "tertiary-container": "#bc4800",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-surface-variant": "#434655",
+                        "inverse-on-surface": "#eff1f3",
+                        "primary-fixed": "#dbe1ff",
+                        "on-secondary-fixed-variant": "#31447b",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-tertiary-fixed": "#360f00",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#00174b",
+                        "surface-container": "#eceef0",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#acbfff",
+                        "on-surface": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "secondary": "#495c95",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .emergency-glow {
+            box-shadow: 0 0 40px rgba(186, 26, 26, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 backdrop-blur-xl shadow-sm flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center">
+<img alt="User Profile Photo" class="w-full h-full object-cover" data-alt="Close up portrait of a young man with a friendly expression in soft natural daylight, minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrOlu0T9HqjSt-N5LBynfiM_P-Zg5uwmCiu6AoQyBL8LderB_lsjj0OF7uMDwq4ntKLcvR9UkUqN6ie8KzGHmr6O9XCtJW0bw8uToWMeHcgn_go3019QUQFMcpHAdJ-q-C2XCQz8pzB8NLXBjwQAJ3kL5jlJ8mrs5c00kywn3W0z2A_qKSaa3iTYp-LlY20GLSKmgL8fiGTh0IQKpXcpbsdTwNn-AwHWKxXI3Ki_Kd0twP7nrmpIezEVN5SxSAQ6X8alRi6yAAd9M"/>
+</div>
+<span class="text-xl font-bold text-[#004ac6] font-headline tracking-tight">HealthMate</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full hover:bg-[#f2f4f6] transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#434655]">notifications</span>
+</button>
+</div>
+</nav>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Profile Header Asymmetric Layout -->
+<section class="mb-10">
+<div class="flex flex-col gap-1">
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface font-headline">Alex</h1>
+<p class="text-on-surface-variant body-lg">Premium Member since 2022</p>
+</div>
+</section>
+<!-- Bento Grid Stats -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-primary text-3xl">bloodtype</span>
+<div>
+<p class="text-on-surface-variant label-md uppercase tracking-wider font-semibold">Blood Type</p>
+<p class="text-3xl font-bold text-on-surface">O+</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-tertiary text-3xl">favorite</span>
+<div>
+<p class="text-on-surface-variant label-md uppercase tracking-wider font-semibold">Heart Rate</p>
+<p class="text-3xl font-bold text-on-surface">72 <span class="text-lg font-medium text-on-surface-variant">BPM</span></p>
+</div>
+</div>
+</div>
+<!-- Critical Action: Emergency -->
+<section class="mb-10">
+<div class="bg-error-container rounded-xl p-8 flex flex-col items-center text-center emergency-glow border border-error/10">
+<div class="w-20 h-20 bg-error rounded-full flex items-center justify-center mb-6 shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-on-error text-4xl" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<h2 class="text-2xl font-bold text-on-error-container mb-2">EMERGENCY</h2>
+<p class="text-on-error-container/80 text-sm max-w-[240px]">Tap and hold for 3 seconds to alert your emergency contacts and local services.</p>
+</div>
+</section>
+<!-- Settings List (Tonal Layering, No Borders) -->
+<section class="space-y-4">
+<h3 class="px-2 text-on-surface-variant font-semibold text-sm uppercase tracking-widest">Account &amp; Security</h3>
+<div class="space-y-2">
+<a class="group flex items-center justify-between p-5 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-xl" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">manage_accounts</span>
+</div>
+<span class="font-semibold text-on-surface">Account settings</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-5 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-xl" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">policy</span>
+</div>
+<span class="font-semibold text-on-surface">Privacy policy</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-5 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-xl text-error" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined">logout</span>
+</div>
+<span class="font-semibold">Sign out</span>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Editorial Info Card -->
+<section class="mt-12 bg-primary p-8 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="text-on-primary text-2xl font-bold mb-2">Health Passport</h4>
+<p class="text-on-primary-container text-sm max-w-[200px] mb-6">Your encrypted medical data is ready for travel.</p>
+<button class="bg-surface-container-lowest text-primary px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-white transition-all active:scale-95">
+                    View Passport
+                </button>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[160px] text-white">shield</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#ffffff]/90 backdrop-blur-2xl rounded-t-3xl z-50 shadow-[0_-4px_24px_rgba(0,74,198,0.06)]">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-[#434655] px-3 py-1.5 hover:bg-blue-50 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<!-- Meds -->
+<a class="flex flex-col items-center justify-center text-[#434655] px-3 py-1.5 hover:bg-blue-50 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">medical_services</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-wider mt-1">Meds</span>
+</a>
+<!-- Health -->
+<a class="flex flex-col items-center justify-center text-[#434655] px-3 py-1.5 hover:bg-blue-50 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-wider mt-1">Health</span>
+</a>
+<!-- AI -->
+<a class="flex flex-col items-center justify-center text-[#434655] px-3 py-1.5 hover:bg-blue-50 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-wider mt-1">AI</span>
+</a>
+<!-- Profile - ACTIVE -->
+<a class="flex flex-col items-center justify-center bg-[#2563eb]/10 text-[#004ac6] rounded-2xl px-3 py-1.5 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
